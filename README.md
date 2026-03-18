@@ -45,12 +45,15 @@ This landing page is designed to present G-Stack as a digital solutions brand, h
 
 ## 📸 Screenshots
 
-> Add your screenshots in the `/screenshots` folder
 
 - Hero Section
+![Hero Section](./screenshots/hero.png)
 - Services Section
+![Services Section](./screenshots/services.png)
 - Portfolio Section
+![Portfolio Section](./screenshots/portfolio.png)
 - Contact Section
+![Contact Section](./screenshots/contact.png)
 
 ---
 
