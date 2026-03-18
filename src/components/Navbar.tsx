@@ -5,9 +5,9 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
-        <nav className="absolute top-0 left-0 w-full flex justify-between items-center px-10 z-50">
+        <nav className="absolute top-0 left-0 w-full flex justify-between items-center px-10 py-6 z-50">
             <div className="logo">
-                <img src={logo} alt="logo" className="w-50" />
+                <img src={logo} alt="logo" className="w-40" />
             </div>
             <div className="links">
                 <ul className="gap-4 hidden md:flex">
