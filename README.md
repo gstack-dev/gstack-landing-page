@@ -50,6 +50,8 @@ This landing page is designed to present G-Stack as a digital solutions brand, h
 ![Hero Section](./screenshots/hero.png)
 - Services Section
 ![Services Section](./screenshots/services.png)
+- Technologies Section
+![Technologies Section](./screenshots/technologies.png)
 - Portfolio Section
 ![Portfolio Section](./screenshots/portfolio.png)
 - About Section

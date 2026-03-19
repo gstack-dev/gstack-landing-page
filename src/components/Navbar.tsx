@@ -15,14 +15,20 @@ const Navbar = () => {
                         <a
                             href="#"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                            onClick={() => {
+                                setIsMenuOpen(false);
+                            }}
                         >
                             Home
                         </a>
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="#services"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                            onClick={() => {
+                                setIsMenuOpen(false);
+                            }}
                         >
                             Services
                         </a>
@@ -31,6 +37,9 @@ const Navbar = () => {
                         <a
                             href="#"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                            onClick={() => {
+                                setIsMenuOpen(false);
+                            }}
                         >
                             Technologies
                         </a>
@@ -39,6 +48,9 @@ const Navbar = () => {
                         <a
                             href="#"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                            onClick={() => {
+                                setIsMenuOpen(false);
+                            }}
                         >
                             Portfolio
                         </a>
@@ -47,6 +59,9 @@ const Navbar = () => {
                         <a
                             href="#about"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                            onClick={() => {
+                                setIsMenuOpen(false);
+                            }}
                         >
                             About
                         </a>
@@ -55,6 +70,9 @@ const Navbar = () => {
                         <a
                             href="#contact"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                            onClick={() => {
+                                setIsMenuOpen(false);
+                            }}
                         >
                             Contact
                         </a>
@@ -83,14 +101,20 @@ const Navbar = () => {
                                 <a
                                     href="#"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                                    onClick={() => {
+                                        setIsMenuOpen(false);
+                                    }}
                                 >
                                     Home
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="#services"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                                    onClick={() => {
+                                        setIsMenuOpen(false);
+                                    }}
                                 >
                                     Services
                                 </a>
@@ -99,6 +123,9 @@ const Navbar = () => {
                                 <a
                                     href="#"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                                    onClick={() => {
+                                        setIsMenuOpen(false);
+                                    }}
                                 >
                                     Technologies
                                 </a>
@@ -107,6 +134,9 @@ const Navbar = () => {
                                 <a
                                     href="#"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                                    onClick={() => {
+                                        setIsMenuOpen(false);
+                                    }}
                                 >
                                     Portfolio
                                 </a>
@@ -115,6 +145,9 @@ const Navbar = () => {
                                 <a
                                     href="#about"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                                    onClick={() => {
+                                        setIsMenuOpen(false);
+                                    }}
                                 >
                                     About
                                 </a>
@@ -123,6 +156,9 @@ const Navbar = () => {
                                 <a
                                     href="#contact"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                                    onClick={() => {
+                                        setIsMenuOpen(false);
+                                    }}
                                 >
                                     Contact
                                 </a>
