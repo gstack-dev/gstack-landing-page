@@ -45,7 +45,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="#contact"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                         >
                             Contact
