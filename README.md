@@ -52,6 +52,8 @@ This landing page is designed to present G-Stack as a digital solutions brand, h
 ![Services Section](./screenshots/services.png)
 - Portfolio Section
 ![Portfolio Section](./screenshots/portfolio.png)
+- About Section
+![About Section](./screenshots/about.png)
 - Contact Section
 ![Contact Section](./screenshots/contact.png)
 

@@ -32,12 +32,20 @@ const Navbar = () => {
                             href="#"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                         >
-                            Portfolio
+                            Technologies
                         </a>
                     </li>
                     <li>
                         <a
                             href="#"
+                            className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                        >
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#about"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                         >
                             About
@@ -92,7 +100,7 @@ const Navbar = () => {
                                     href="#"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                                 >
-                                    Portfolio
+                                    Technologies
                                 </a>
                             </li>
                             <li>
@@ -100,12 +108,20 @@ const Navbar = () => {
                                     href="#"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                                 >
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#about"
+                                    className="hover:text-accent transition-colors duration-300 font-medium text-xl"
+                                >
                                     About
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="#contact"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                                 >
                                     Contact
