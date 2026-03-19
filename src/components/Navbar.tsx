@@ -35,7 +35,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="#technologies"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                             onClick={() => {
                                 setIsMenuOpen(false);
@@ -46,7 +46,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="#portfolio"
                             className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                             onClick={() => {
                                 setIsMenuOpen(false);
@@ -121,7 +121,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="#technologies"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                                     onClick={() => {
                                         setIsMenuOpen(false);
@@ -132,7 +132,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="#portfolio"
                                     className="hover:text-accent transition-colors duration-300 font-medium text-xl"
                                     onClick={() => {
                                         setIsMenuOpen(false);
