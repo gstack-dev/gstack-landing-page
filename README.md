@@ -26,10 +26,10 @@ This landing page is designed to present G-Stack as a digital solutions brand, h
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React (or HTML/CSS/JS if applicable)
-- **Styling:** CSS3 / Tailwind CSS (update if needed)
+- **Frontend:** React 
+- **Styling:** Tailwind CSS
 - **Fonts:** Poppins & Inter
-- **Deployment:** Vercel / Netlify
+- **Deployment:** Vercel
 
 ---
 
@@ -63,7 +63,7 @@ This landing page is designed to present G-Stack as a digital solutions brand, h
 
 ## 🚀 Live Demo
 
-👉 [View Live Project](YOUR_DEPLOYED_LINK)
+👉 [View Live Project](https://gstack-ashen.vercel.app)
 
 ---
 
