@@ -11,17 +11,17 @@ const Technologies = () => {
                     <div className="p-5 bg-background rounded-lg hover:bg-primary transition-all duration-300 cursor-pointer hover:text-accent">Tailwind CSS</div>
                 </div>
             </div>
-            <div className="flex flex-col w-full flex-wrap">
+            <div className="flex flex-col w-full">
                 <div className="text-xl lg:text-2xl font-bold md:text-xl text-secondary mb-2 after:content-[''] after:block after:w-full after:h-0.5 after:bg-[#eee] after:rounded-lg">Backend</div>
-                <div className="flex gap-5 text-black">
+                <div className="flex gap-5 text-black flex-wrap">
                     <div className="p-5 bg-background rounded-lg hover:bg-primary transition-all duration-300 cursor-pointer hover:text-accent">Node.js</div>
                     <div className="p-5 bg-background rounded-lg hover:bg-primary transition-all duration-300 cursor-pointer hover:text-accent">Express.js</div>
                     <div className="p-5 bg-background rounded-lg hover:bg-primary transition-all duration-300 cursor-pointer hover:text-accent">Laravel</div>
                 </div>
             </div>
-            <div className="flex flex-col w-full flex-wrap">
+            <div className="flex flex-col w-full">
                 <div className="text-xl lg:text-2xl font-bold md:text-xl text-secondary mb-2 after:content-[''] after:block after:w-full after:h-0.5 after:bg-[#eee] after:rounded-lg">Database</div>
-                <div className="flex gap-5 text-black">
+                <div className="flex gap-5 text-black  flex-wrap">
                     <div className="p-5 bg-background rounded-lg hover:bg-primary transition-all duration-300 cursor-pointer hover:text-accent">MongoDB</div>
                     <div className="p-5 bg-background rounded-lg hover:bg-primary transition-all duration-300 cursor-pointer hover:text-accent">SQL</div>
                     <div className="p-5 bg-background rounded-lg hover:bg-primary transition-all duration-300 cursor-pointer hover:text-accent">MySQL</div>
