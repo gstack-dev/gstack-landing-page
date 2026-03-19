@@ -70,7 +70,7 @@ const Navbar = () => {
                         >
                             <X />
                         </button>
-                        <ul className="flex flex-col gap-4">
+                        <ul className="flex flex-col gap-4  px-7 py-3.5 text-lg">
                             <li>
                                 <a
                                     href="#"
