@@ -1,8 +1,8 @@
 import { Check, X } from "lucide-react";
 
-const Toaster = ({ message, type }: { message: string; type: string }) => {
+const Toaster = ({ message, type, show }: { message: string; type: string, show: boolean }) => {
     return (
-        <div className={`alert-box ${message ? "show" : ""}`}>
+        <div className={`alert-box ${show ? "show" : ""}`}>
             <div className={`alert ${type === "success" ? "success" : "error"}`}>
                 {type === "success" ? (
                     <Check className={`text-[35px] mr-2 text-[#0abf30]`} />
