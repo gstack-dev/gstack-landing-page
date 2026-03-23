@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import portfolio1 from "../assets/portfolio1.png";
 import portfolio2 from "../assets/portfolio2.png";
 
@@ -26,32 +26,27 @@ function Portfolio() {
     const intervalRef = useRef<number | null>(null);
     const [index, setIndex] = useState(0);
 
-    const getItemWidth = () => {
-        if (window.innerWidth < 768) return 296; // 280 width + 16 gap تقريبًا
-        return 360; // desktop width + gap
-    };
+    const getItemWidth = useCallback(() => {
+        if (window.innerWidth < 768) return 296;
+        return 360;
+    }, []);
 
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
         const container = containerRef.current;
         if (!container) return;
 
         const itemWidth = getItemWidth();
-        const nextIndex = index + 1;
-
-        if (nextIndex >= portfolio.length) {
-            container.scrollTo({
-                left: 0,
-                behavior: "smooth",
-            });
-            setIndex(0);
-        } else {
-            container.scrollTo({
-                left: nextIndex * itemWidth,
-                behavior: "smooth",
-            });
-            setIndex(nextIndex);
-        }
-    };
+        setIndex(prev => {
+            const nextIndex = prev + 1;
+            if (nextIndex >= portfolio.length) {
+                container.scrollTo({ left: 0, behavior: "smooth" });
+                return 0;
+            } else {
+                container.scrollTo({ left: nextIndex * itemWidth, behavior: "smooth" });
+                return nextIndex;
+            }
+        });
+    }, [getItemWidth]);
 
     useEffect(() => {
         intervalRef.current = window.setInterval(() => {
@@ -61,7 +56,7 @@ function Portfolio() {
         return () => {
             if (intervalRef.current) clearInterval(intervalRef.current);
         };
-    }, [index]);
+    }, [handleScroll]);
 
     useEffect(() => {
         const container = containerRef.current;
@@ -89,7 +84,7 @@ function Portfolio() {
             container.removeEventListener("touchstart", stopAutoScroll);
             container.removeEventListener("touchend", startAutoScroll);
         };
-    }, [index]);
+    }, [handleScroll]);
 
     return (
         <section
