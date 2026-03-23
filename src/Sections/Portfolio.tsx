@@ -10,6 +10,7 @@ const portfolio = [
         status: "Coming Soon",
         image: portfolio1,
         link: "#",
+        alt: "Screenshot of business website project - professional corporate landing page with hero section, services grid, and contact form"
     },
     {
         title: "Full-Stack Application",
@@ -18,6 +19,7 @@ const portfolio = [
         status: "Coming Soon",
         image: portfolio2,
         link: "#",
+        alt: "Screenshot of full-stack application - dashboard interface with analytics, user management, and database integration features"
     }
 ];
 
@@ -115,8 +117,11 @@ function Portfolio() {
                     >
                         <img
                             src={item.image}
-                            alt={item.title}
+                            alt={item.alt}
                             className="w-full h-44 md:h-48 object-cover rounded-xl"
+                            loading="lazy"
+                            width="360"
+                            height="192"
                         />
 
                         <span

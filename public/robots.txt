@@ -1,4 +1,36 @@
+# G-Stack Robots.txt
+# https://gstack-ashen.vercel.app
+
 User-agent: *
 Allow: /
 
+# Allow AI search crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckBot
+Allow: /
+
+# Sitemap
 Sitemap: https://gstack-ashen.vercel.app/sitemap.xml

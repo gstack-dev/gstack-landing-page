@@ -28,7 +28,7 @@ const AboutMe = () => {
                 </p>
             </div>
             <div className="me flex-1 hidden md:block">
-                <img src={me} alt="me" className="translate-y-10" />
+                <img src={me} alt="George - Founder and Full-Stack Developer at G-Stack" className="translate-y-10" loading="lazy" width="400" height="500" />
             </div>
         </section>
     );
