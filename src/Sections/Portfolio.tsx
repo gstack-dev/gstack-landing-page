@@ -147,6 +147,8 @@ function Portfolio() {
 
                         <a
                             href={item.status === "Completed" ? item.link : "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className={`mt-auto text-sm text-center px-4 py-2 rounded-lg font-medium transition ${item.status === "Completed"
                                     ? "bg-secondary text-white hover:opacity-90"
                                     : "bg-gray-200 text-gray-600 cursor-not-allowed pointer-events-none"
