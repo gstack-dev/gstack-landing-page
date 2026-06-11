@@ -4,12 +4,12 @@ import portfolio2 from "../assets/portfolio2.png";
 
 const portfolio = [
     {
-        title: "Business Website",
+        title: "Elevate Studio",
         description:
-            "A full website with frontend and backend functionality for real business use cases.",
-        status: "Coming Soon",
+            "Modern multi-page business website built with Next.js, Tailwind CSS, MongoDB, and custom API routes. Features a backend-powered contact system, admin message dashboard, responsive design, and form validation.",
+        status: "Completed",
         image: portfolio1,
-        link: "#",
+        link: "https://gstack-business-website.vercel.app",
         alt: "Screenshot of business website project - professional corporate landing page with hero section, services grid, and contact form"
     },
     {
@@ -109,11 +109,10 @@ function Portfolio() {
                 {portfolio.map((item, ind) => (
                     <div
                         key={ind}
-                        className={`shrink-0 snap-start w-70 md:w-85 rounded-2xl shadow-lg p-5 flex flex-col gap-4 transition-all duration-300 ${
-                            index === ind
+                        className={`shrink-0 snap-start w-70 md:w-85 rounded-2xl shadow-lg p-5 flex flex-col gap-4 transition-all duration-300 ${index === ind
                                 ? "bg-primary text-accent"
                                 : "bg-white text-primary hover:-translate-y-1"
-                        }`}
+                            }`}
                     >
                         <img
                             src={item.image}
@@ -125,13 +124,12 @@ function Portfolio() {
                         />
 
                         <span
-                            className={`w-fit text-xs px-3 py-1 rounded-full ${
-                                item.status === "Completed"
+                            className={`w-fit text-xs px-3 py-1 rounded-full ${item.status === "Completed"
                                     ? "bg-green-100 text-green-700"
                                     : item.status === "In Progress"
-                                      ? "bg-blue-100 text-blue-700"
-                                      : "bg-gray-200 text-gray-700"
-                            }`}
+                                        ? "bg-blue-100 text-blue-700"
+                                        : "bg-gray-200 text-gray-700"
+                                }`}
                         >
                             {item.status}
                         </span>
@@ -139,22 +137,20 @@ function Portfolio() {
                         <h3 className="text-xl font-bold">{item.title}</h3>
 
                         <p
-                            className={`text-sm leading-6 ${
-                                index === ind
+                            className={`text-sm leading-6 ${index === ind
                                     ? "text-accent/90"
                                     : "text-primary/80"
-                            }`}
+                                }`}
                         >
                             {item.description}
                         </p>
 
                         <a
                             href={item.status === "Completed" ? item.link : "#"}
-                            className={`mt-auto text-sm text-center px-4 py-2 rounded-lg font-medium transition ${
-                                item.status === "Completed"
+                            className={`mt-auto text-sm text-center px-4 py-2 rounded-lg font-medium transition ${item.status === "Completed"
                                     ? "bg-secondary text-white hover:opacity-90"
                                     : "bg-gray-200 text-gray-600 cursor-not-allowed pointer-events-none"
-                            }`}
+                                }`}
                         >
                             {item.status === "Completed"
                                 ? "View Project"
