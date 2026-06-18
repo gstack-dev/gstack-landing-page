@@ -13,12 +13,12 @@ const portfolio = [
         alt: "Screenshot of business website project - professional corporate landing page with hero section, services grid, and contact form"
     },
     {
-        title: "Full-Stack Application",
+        title: "Gstack Client Portal",
         description:
-            "A scalable full-stack application with admin features and database integration.",
-        status: "Coming Soon",
+            "Full-stack client portal with project management, file sharing, invoicing, real-time messaging, multi-language support, and an admin dashboard — built with Next.js, MongoDB, and Vercel Blob.",
+        status: "Completed",
         image: portfolio2,
-        link: "#",
+        link: "https://gstack-client-portal.vercel.app",
         alt: "Screenshot of full-stack application - dashboard interface with analytics, user management, and database integration features"
     }
 ];
